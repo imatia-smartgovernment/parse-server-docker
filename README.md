@@ -12,6 +12,7 @@ Environment variables and default values for parse-server;
 APP_ID=myAppId
 MASTER_KEY=mySecretMasterKey
 FILE_KEY=optionalFileKey
+DATABASE_URI=mongodb://localhost:27017/dev
 
 ## Running
 
@@ -19,4 +20,4 @@ Quick run;
 docker run gael4imatia/parse-server-docker
 
 Custom parameters;
-docker run -d -t -i -e APP_ID='my-app' -e MASTER_KEY='master_key' -e FILE_KEY='file_key' -p 8080:8080 gael4imatia/parse-server-docker
+docker run -d -t -i -e APP_ID='my-app' -e MASTER_KEY='master_key' -e FILE_KEY='file_key' -e DATABASE_URI='mongodb://user:password@localhost:27017/dev' -p 8080:8080 gael4imatia/parse-server-docker
