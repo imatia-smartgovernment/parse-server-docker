@@ -14,7 +14,7 @@ ENV APP_ID myAppId
 ENV MASTER_KEY mySecretMasterKey
 ENV FILE_KEY optionalFileKey
 
-EXPOSE 8080 27017 
+EXPOSE 8080 
 
 CMD [ "npm", "start" ]
 
