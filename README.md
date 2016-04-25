@@ -16,7 +16,7 @@ FILE_KEY=optionalFileKey
 ## Running
 
 Quick run;
-docker run gael4imatia/parse-server
+docker run gael4imatia/parse-server-docker
 
 Custom parameters;
-docker run -d -t -i -e APP_ID='my-app' -e MASTER_KEY='master_key' -e FILE_KEY='file_key' -p 8080:8080 instainer/parse-server
+docker run -d -t -i -e APP_ID='my-app' -e MASTER_KEY='master_key' -e FILE_KEY='file_key' -p 8080:8080 gael4imatia/parse-server-docker
